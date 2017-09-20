@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Services.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,13 @@ namespace Services
 {
     public partial class App : Application
     {
+        public static NavigationPage Navigator { get; internal set; }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage =new NavigationPage( new MainPage());
+            MainPage =new MasterPage();
             
         }
 
