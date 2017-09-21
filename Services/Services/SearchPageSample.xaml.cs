@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Services.CustomRenderers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,19 +8,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Services.Pages
+namespace Services
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class UserPage : ContentPage
+    public partial class SearchPageSample : SearchPage
     {
-        public UserPage()
+        public SearchPageSample()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new SearchPageSample());
         }
     }
 }
