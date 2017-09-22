@@ -2,11 +2,33 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Services.Pages.UserPage"
+              xmlns:Fab="clr-namespace:Services.CustomRenderers;assembly=Services"
              Title="UserPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
-            <Button Text="vavi" Clicked="Button_Clicked"/>
-        </StackLayout>
+        <RelativeLayout>
+            <ScrollView
+              RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"         
+
+              RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" >
+
+                <StackLayout>
+                    <Image Source="Ecommerce.jpg"/>
+                    <Label Text="Welcome to Xamarin Forms!" />
+                    <Button Text="nex page" Clicked="Button_Clicked"/>
+                   
+                </StackLayout>
+
+            </ScrollView>
+
+            <Fab:FloatingActionButton x:Name="FAB" 
+                                      HorizontalOptions="Center" WidthRequest="50" HeightRequest="50" 
+                                      VerticalOptions="Center" Image="Mas.png" ButtonColor="#03A9F4" />
+            <Fab:FloatingActionButton
+          x:Name="fabBtn" Image="Mas.png" Clicked="fabBtn_Clicked"
+          RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"    
+
+          RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}" />
+        </RelativeLayout>
+        
     </ContentPage.Content>
 </ContentPage>

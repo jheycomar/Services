@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
            	xmlns:customrenderers="clr-namespace:Services.CustomRenderers;assembly=Services"
              x:Class="Services.SearchPageSample"
-            SearchPlaceHolderText="Type to Search"
+            SearchPlaceHolderText="Escribe para buscar"
 	        	SearchCommand="{Binding SearchCommand}">
 
         <StackLayout>          

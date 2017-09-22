@@ -21,5 +21,10 @@ namespace Services.Pages
         {
             Navigation.PushAsync(new SearchPageSample());
         }
+
+        private void fabBtn_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Info","Uste iso click","Acep");
+        }
     }
 }
