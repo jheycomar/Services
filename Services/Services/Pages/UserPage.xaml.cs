@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Services.Navigation;
+using Services.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,14 +14,15 @@ namespace Services.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserPage : ContentPage
     {
+        private NavigationService2 navigationService2=new NavigationService2();
         public UserPage()
         {
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SearchPageSample());
+          await  Navigation.PushAsync(new Views.DetailPage2());
         }
 
         private void fabBtn_Clicked(object sender, EventArgs e)

@@ -20,6 +20,7 @@ namespace Services.Pages
         {
             base.OnAppearing();
             App.Navigator = Navigator;
+          
         }
     }
 }

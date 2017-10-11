@@ -91,7 +91,9 @@
     <Compile Include="FloatingActionButtonRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="MaterialNavigationRenderer.cs" />
     <Compile Include="SearchPageRenderer.cs" />
+    <Compile Include="TransparentNavigationBarPageRenderer.cs" />
     <None Include="app.config" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
@@ -119,6 +121,14 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="FormsToolkit, Version=1.1.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FormsToolkit.1.1.18\lib\Xamarin.iOS10\FormsToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FormsToolkit.iOS, Version=1.1.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FormsToolkit.1.1.18\lib\Xamarin.iOS10\FormsToolkit.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />

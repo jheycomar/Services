@@ -20,9 +20,9 @@
 
             </ScrollView>
 
-            <Fab:FloatingActionButton x:Name="FAB" 
+            <!--<Fab:FloatingActionButton x:Name="FAB" 
                                       HorizontalOptions="Center" WidthRequest="50" HeightRequest="50" 
-                                      VerticalOptions="Center" Image="Mas.png" ButtonColor="#03A9F4" />
+                                      VerticalOptions="Center" Image="Mas.png" ButtonColor="#03A9F4" />-->
             <Fab:FloatingActionButton
           x:Name="fabBtn" Image="Mas.png" Clicked="fabBtn_Clicked"
           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"    

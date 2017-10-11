@@ -2838,8 +2838,8 @@ namespace Services.Droid
 			// aapt resource value: 0x7f080043
 			public const int action_mode_close_button = 2131230787;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int action_search = 2131230902;
+			// aapt resource value: 0x7f0800b7
+			public const int action_search = 2131230903;
 			
 			// aapt resource value: 0x7f08009d
 			public const int action_text = 2131230877;
@@ -3018,8 +3018,11 @@ namespace Services.Droid
 			// aapt resource value: 0x7f080048
 			public const int list_item = 2131230792;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int masked = 2131230901;
+			// aapt resource value: 0x7f0800b4
+			public const int logoImageLayout = 2131230900;
+			
+			// aapt resource value: 0x7f0800b6
+			public const int masked = 2131230902;
 			
 			// aapt resource value: 0x7f0800a1
 			public const int media_actions = 2131230881;
@@ -3324,8 +3327,8 @@ namespace Services.Droid
 			// aapt resource value: 0x7f08000e
 			public const int view_offset_helper = 2131230734;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int visible = 2131230900;
+			// aapt resource value: 0x7f0800b5
+			public const int visible = 2131230901;
 			
 			// aapt resource value: 0x7f080093
 			public const int volume_item_container = 2131230867;
@@ -3620,6 +3623,9 @@ namespace Services.Droid
 			
 			// aapt resource value: 0x7f030043
 			public const int Toolbar = 2130903107;
+			
+			// aapt resource value: 0x7f030044
+			public const int ToolbarLogo = 2130903108;
 			
 			static Layout()
 			{

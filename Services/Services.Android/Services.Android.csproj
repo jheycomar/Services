@@ -48,6 +48,14 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FormsToolkit, Version=1.1.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FormsToolkit.1.1.18\lib\MonoAndroid10\FormsToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FormsToolkit.Android, Version=1.1.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FormsToolkit.1.1.18\lib\MonoAndroid10\FormsToolkit.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.270\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
       <Private>True</Private>
@@ -141,6 +149,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomNavigationBarRenderer.cs" />
     <Compile Include="FloatingActionButtonRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -152,6 +161,7 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\ToolbarLogo.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
