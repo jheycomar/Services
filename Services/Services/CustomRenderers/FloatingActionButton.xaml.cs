@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
 
 namespace Services.CustomRenderers
@@ -12,8 +13,11 @@ namespace Services.CustomRenderers
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FloatingActionButton : Button
     {
+       
+        
 
         public static BindableProperty ButtonColorProperty = BindableProperty.Create(nameof(ButtonColor), typeof(Color), typeof(FloatingActionButton), Color.Accent);
+
         public Color ButtonColor
         {
             get
@@ -25,6 +29,8 @@ namespace Services.CustomRenderers
                 SetValue(ButtonColorProperty, value);
             }
         }
+
+        
         public FloatingActionButton()
         {
             InitializeComponent();

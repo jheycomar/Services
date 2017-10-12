@@ -7,11 +7,11 @@
     <MasterDetailPage.Master>
         <pages:MenuPage></pages:MenuPage>
     </MasterDetailPage.Master>
-    <MasterDetailPage.Detail>       
-            <NavigationPage x:Name="Navigator" BackgroundColor="Transparent">
+    <MasterDetailPage.Detail>
+        <navi:TranspatentNavigationPage x:Name="Navigator" >
                 <x:Arguments>
                     <pages:UserPage></pages:UserPage>
                 </x:Arguments>
-        </NavigationPage>
+        </navi:TranspatentNavigationPage>
     </MasterDetailPage.Detail>
 </MasterDetailPage>

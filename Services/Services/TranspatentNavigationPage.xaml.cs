@@ -12,9 +12,9 @@ using Xamarin.Forms.Xaml;
 namespace Services
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TranspatentNavigationPage : Xamarin.Forms.NavigationPage
+    public partial class TranspatentNavigationPage : NavigationPage
     {
-        public TranspatentNavigationPage()
+        public TranspatentNavigationPage() : base()
         {
             InitializeComponent();
         }

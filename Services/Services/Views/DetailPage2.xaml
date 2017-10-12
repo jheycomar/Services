@@ -1,12 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Services.Views.DetailPage2">
-    <ScrollView>
+             x:Class="Services.Views.DetailPage2"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             xmlns:Fab="clr-namespace:Services.CustomRenderers;assembly=Services"
+             Title="DetailPage">
+    <RelativeLayout>
+        
+    <ContentView
+                x:Name="HeaderPanel"
+                BackgroundColor="{StaticResource BackgroundColor}"
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand"
+                Margin="0,-75,0,0">
+        <ContentView.Margin>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="Android" Value="0,0,0,0" />
+                <On Platform="iOS" Value="0,-75,0,0" />
+            </OnPlatform>
+        </ContentView.Margin>
+        <Image 	
+                    Source="Ecommerce.jpg" 
+                    Aspect="AspectFill"
+                    HeightRequest="250"
+					HorizontalOptions="FillAndExpand"
+					VerticalOptions="Start"
+					Opacity=".8">
+            <Image.HeightRequest>
+                <OnPlatform x:TypeArguments="x:Double">
+                    <On Platform="Android" Value="200" />
+                    <On Platform="iOS" Value="275" />
+                </OnPlatform>
+            </Image.HeightRequest>
+        </Image>
+    </ContentView>
+
+        <ScrollView x:Name="ParallaxScroll"  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"         
+
+              RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
         <StackLayout>
             <Image Source="Ecommerce.jpg" Margin="5"/>
             <Label Text="Welcome to Xamarin Forms!"  />
             <Image Source="Ecommerce.jpg" Margin="6"/>
+            <Image Source="Ecommerce.jpg" Margin="6"/>
         </StackLayout>
     </ScrollView>
+        
+        <Fab:FloatingActionButton
+          x:Name="fabBtn" Image="Mas.png" 
+          RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}" 
+          RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}" />
+    </RelativeLayout>
 </ContentPage>

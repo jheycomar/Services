@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Services.Pages.UserPage"
               xmlns:Fab="clr-namespace:Services.CustomRenderers;assembly=Services"
+             BackgroundColor="{StaticResource BackgroundColor}"
              Title="UserPage">
     <ContentPage.Content>
         <RelativeLayout>
